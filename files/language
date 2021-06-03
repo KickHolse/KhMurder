@@ -1,0 +1,65 @@
+# Skript feito por Kick Holse
+# Discord: https://www.kskripts.tk/discord
+
+lobby:
+  broadcast: '{display} &6entrou neste lobby!'
+  hotbar:
+    warps:
+      slot: 2
+      execute: 'KHKITS>warps'
+      icon: 'item>COMPASS : nome>&aWarps &7(Clique direito) : desc>&7Jogue em outras warps!'
+  chat:
+    color:
+      default: '&7'
+      custom: '&f'
+    format: '{prefix}{player}{color}: {message}'
+  motd:
+    enabled: true
+    header: '&a&lKS &f- &7www.kskripts.tk'
+    footer: '&e&nKit PvP&e aberto para todos!'
+  tablist:
+    enabled: true
+    header: '\n&a&lREDE KS\n    &fjogar.kskripts.tk\n '
+    footer: ' \n&bForúm: &fkskripts.tk/forum\n&b               Discord: &fkskripts.tk/discord               \n'
+game:
+  rewards:
+    coins-per-play: 20
+    coins-per-kill: 10
+    coins-per-win: 50
+  messages:
+    earnings-coins: '&6+{coins} moedas &8- &e+{exp} EXP'
+  command:
+    build:
+      enabled: '&aO seu modo construtor foi ativado!'
+      disabled: '&cO seu modo construtor foi desativado!'
+scoreboard:
+  update-time: 1
+  titles:
+  - '&a&lMURDER'
+  lines:
+    lobby:
+    - ''
+    - ' &eGeral:'
+    - '  Abates: &a{khmm_kills}'
+    - '  Vitórias: &a{khmm_wins}'
+    - '  Partidas: &a{khmm_matches}'
+    - ''
+    - ' Moedas: &6{khkits_coins}'
+    - ''
+    - ' &ewww.kskripts.tk'
+    waiting:
+    - ''
+    - ' Jogadores: &a{playing}/{maximum}'
+    - ' Mapa: &a{map}'
+    - ''
+    - ' {time}'
+    - ''
+    - ' &ewww.kskripts.tk'
+    ingame:
+    - ''
+    - ' Jogadores: &a{players}'
+    - ''
+    - ' &ewww.kskripts.tk'
+  replace:
+    waiting: 'Esperando...'
+    starting: 'Iniciando em &a{seconds}s'
