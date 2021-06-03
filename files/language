@@ -44,7 +44,7 @@ scoreboard:
     - '  Vitórias: &a{khmm_wins}'
     - '  Partidas: &a{khmm_matches}'
     - ''
-    - ' Moedas: &6{khkits_coins}'
+    - ' Moedas: &6{khmm_coins}'
     - ''
     - ' &ewww.kskripts.tk'
     waiting:
