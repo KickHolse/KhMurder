@@ -72,7 +72,11 @@ scoreboard:
     - ' &ewww.kskripts.tk'
     ingame:
     - ''
-    - ' Jogadores: &a{players}'
+    - ' Função: &a{role}'
+    - ' Inocentes Vivos: &a{alive}'
+    - ''
+    - ' Mapa: &a{map}'
+    - ' Modo: &a{made}'
     - ''
     - ' &ewww.kskripts.tk'
   replace:
