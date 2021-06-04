@@ -4,10 +4,19 @@
 lobby:
   broadcast: '{display} &6entrou neste lobby!'
   hotbar:
-    warps:
-      slot: 2
-      execute: 'KHKITS>warps'
-      icon: 'item>COMPASS : nome>&aWarps &7(Clique direito) : desc>&7Jogue em outras warps!'
+    profile:
+      slot: 1
+      execute: 'CORE>profile'
+      icon: 'item>HEAD:dono={player} : nome>&aMeu Perfil &7(Clique direito) : desc>&7Veja todas as suas informações!'
+    shop:
+      slot: 3
+      execute: 'SKYWARS>shop'
+      icon: 'item>EMERALD : nome>&aLoja &7(Clique direito) : desc>&7Compre diversos cosméticos!'
+    players:
+      slot: 7
+      execute: 'SETTINGS>players'
+      icon: 'item>351:10 : nome>&fJogadores &aON : desc>&7Desative a visibilidade dos jogadores!'
+      icon-i: 'item>351:8 : nome>&fJogadores &cOFF : desc>&7Ative a visibilidade dos jogadores!'
   chat:
     color:
       default: '&7'
@@ -16,7 +25,7 @@ lobby:
   motd:
     enabled: true
     header: '&a&lKS &f- &7www.kskripts.tk'
-    footer: '&e&nKit PvP&e aberto para todos!'
+    footer: '&e&nMurder&e lançado com &lDOUBLE COINS&e!'
   tablist:
     enabled: true
     header: '\n&a&lREDE KS\n    &fjogar.kskripts.tk\n '
@@ -27,11 +36,17 @@ game:
     coins-per-kill: 10
     coins-per-win: 50
   messages:
+    cooldown: '&cVocê deve esperar &7{time}&c para usar isto.'
     earnings-coins: '&6+{coins} moedas &8- &e+{exp} EXP'
   command:
     build:
       enabled: '&aO seu modo construtor foi ativado!'
       disabled: '&cO seu modo construtor foi desativado!'
+  hotbar:
+    quit:
+      slot: 8
+      execute: 'POTATO>leave'
+      icon: 'item>BED : nome>&cSair &7(Clique direito) : desc>&7Clique com o botão direito\n&7para voltar ao lobby!'
 scoreboard:
   update-time: 1
   titles:
